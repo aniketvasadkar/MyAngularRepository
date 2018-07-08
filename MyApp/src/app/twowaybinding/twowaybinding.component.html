@@ -1,0 +1,18 @@
+ <div>
+ <h1>
+  Two way binding us ngModel directive
+</h1>
+
+<table>
+<tr><td>First Name : </td><td><input [(ngModel)]="firstName" ></td><td>{{firstName | titlecase}}</td></tr>
+<tr><td>Last Name : </td><td><input [(ngModel)]="lastName" ></td><td>{{lastName | titlecase }}</td></tr>
+<tr><td>Salary : </td><td><input [(ngModel)]="salary" ></td><td>{{salary | currency : "INR" :true }}</td></tr>
+
+</table>
+
+</div>
+
+ 
+
+
+

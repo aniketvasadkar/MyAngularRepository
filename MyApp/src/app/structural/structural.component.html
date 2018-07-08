@@ -1,0 +1,36 @@
+ <div>
+ <p>
+  {{heading}}
+</p>
+<hr>
+Enter City Name : <input [(ngModel)]="cityName" #newCityName> 
+<button (click)="addCity(newCityName.value)" >Add City</button><br> {{cityName}}
+<br>
+<button (click)="check()">Hide/Show</button>
+<div *ngIf="isVisible">
+<ul style="text-align: left">
+<li *ngFor="let city of cities" >{{city.name}}</li>
+
+</ul>
+</div>
+<hr>
+<h1>Switch case statement</h1>
+<button (click)="increament()">Switch</button>
+<div [ngSwitch]="value" >
+<p *ngSwitchCase="1" >case 1</p>
+<p *ngSwitchCase="2" >case 2</p>
+<p *ngSwitchCase="3" >case 3</p>
+<p *ngSwitchCase="4" >case 4</p>
+<p *ngSwitchCase="5" >case 5</p>
+
+<p *ngDefaultCase> case Default</p>
+
+
+</div>
+
+<hr>
+<h1>custome repeat directive</h1>
+<button (click) = "repeatData()">Repeat</button>
+<p *appRepeat="repCount">This is getting repeated</p>
+
+</div>

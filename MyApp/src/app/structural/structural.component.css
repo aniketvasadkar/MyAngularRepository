@@ -1,0 +1,28 @@
+div{
+
+    background-color: burlywood;
+    color: blue;
+    widows: 1000px;
+    height: 660px;
+    font-size: 25px;
+   
+
+}
+
+input{
+    width: 150px;
+    height: 25px;
+    background-color: blueviolet;
+}
+
+button{
+    width: 130px;
+    height: 25px;
+    color: blue;
+    background-color: orangered;
+}
+
+li{
+color: red;
+font-size: 25px;
+}
